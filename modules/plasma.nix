@@ -15,4 +15,9 @@
     variant = "";
     options = "lv3:caps_switch";
   };
+
+  environment.etc."xdg/kwinrc".text = ''
+    [Wayland]
+    EnablePrimarySelection=false
+  '';
 }
