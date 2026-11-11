@@ -20,4 +20,17 @@
     [Wayland]
     EnablePrimarySelection=false
   '';
+
+  environment.etc."xdg/kdeglobals".text = ''
+    [General]
+    ColorScheme=BreezeDark
+
+    [KDE]
+    LookAndFeelPackage=org.kde.breezedark.desktop
+  '';
+
+  environment.etc."xdg/plasmarc".text = ''
+    [Theme]
+    name=breeze-dark
+  '';
 }
