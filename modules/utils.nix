@@ -1,0 +1,42 @@
+{ pkgs, ... }:
+
+{
+  environment.systemPackages = with pkgs; [
+    vim
+    curl
+    wget
+    stow
+    coreutils
+    bash
+    gnupg
+    gnumake
+    gnused
+    gnutar
+    unzip
+    zip
+    killall
+    ranger
+    fd
+    ripgrep
+    fzf
+    file
+    dig
+    htop
+    btop
+    gcc
+    ffmpeg
+    tldr
+    zoxide
+    libreoffice
+    ani-cli
+    vlc
+    pdftk
+    glow
+    nmap
+    cups
+    inetutils
+    eza
+    gh
+    jq
+  ];
+}
