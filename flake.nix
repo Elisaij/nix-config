@@ -13,6 +13,15 @@
       specialArgs = { inherit inputs; };
       modules = [
         ./configuration.nix
+        ./hardware-configuration/thinkpad-carbon-x1-gen9.nix
+      ];
+    };
+
+    nixosConfigurations.thinkpad-impure = nixpkgs.lib.nixosSystem {
+      specialArgs = { inherit inputs; };
+      modules = [
+        ./configuration.nix
+        /etc/nixos/hardware-configuration.nix
       ];
     };
   };

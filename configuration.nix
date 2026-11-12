@@ -2,7 +2,6 @@
 
 {
   imports = [
-      ./hardware-configuration/thinkpad-carbon-x1-gen9.nix
       ./modules/communications.nix
       ./modules/fonts.nix
       ./modules/neovim.nix
